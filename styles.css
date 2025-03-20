@@ -1,7 +1,7 @@
 /* Global font variable */
 @font-face {
     font-family:"Tauri";
-    src: url("images/Tauri-Regular.ttf") format("truetype");
+    src: url("src/Tauri-Regular.ttf") format("truetype");
     font-display: swap;
 }
 :root {
@@ -85,7 +85,7 @@ nav.NavBar {}
     width: 100vw;
     color: white;
     text-shadow: 1px 1px #3b1125;
-    background: url(images/circles.jpeg) no-repeat center center;
+    background: url(src/circles.jpeg) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
     background-color: rgb(131,110,187);
@@ -115,7 +115,7 @@ nav.NavBar {}
     font-size: 2vmin;
     padding-bottom: 10vh;
     width: 100%;
-    background: url(images/green.jpg) no-repeat center center;
+    background: url(src/green.jpg) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
     background-color: rgb(108, 196, 155);
@@ -224,7 +224,7 @@ table {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(images/collageH.jpg) no-repeat center center;
+    background: url(src/collageH.jpg) no-repeat center center;
     background-size: cover;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
     width: 70%;
@@ -301,7 +301,7 @@ iframe {
 
 /* Resume */
 #RESUME {
-    background: url(images/brown.jpg) no-repeat center center;
+    background: url(src/brown.jpg) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
     background-color: rgb(135,126,103);
@@ -440,7 +440,7 @@ input[type=submit]:hover {
 
 /* Footer */
 .foot {
-    background: url(images/green.jpg) no-repeat fixed;
+    background: url(src/green.jpg) no-repeat fixed;
     background-size: cover;
     background-color: #6d3d54a4;
     display: flex;
@@ -510,7 +510,7 @@ input[type=submit]:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: url(images/collageV.jpg) no-repeat center center;
+        background: url(src/collageV.jpg) no-repeat center center;
     }
     #port-header span {
         padding: 0;
