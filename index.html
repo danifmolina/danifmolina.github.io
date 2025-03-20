@@ -1,0 +1,207 @@
+<html lang="en-US"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="Description" content="Daniela Molina's computer science portfolio website.">
+    <title> Dani Dot Com </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <style>
+        
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="NavBar">
+            <a href="#HOME">HOME</a>
+            <a href="#ABOUT">ABOUT</a>
+            <a href="#PORTFOLIO">PORTFOLIO</a>
+            <a href="#RESUME">RESUME</a>
+            <a href="#CONTACT">CONTACT</a>
+        </nav>
+    </header>
+    <!-- Content inside the <main> element should be unique to the document -->
+    <main>
+        <section id="HOME">
+            <h1>DANIELA<br>MOLINA
+            </h1>
+            <p id="home-info">Software Engineer <br> San Diego, CA</p>
+        </section>
+
+        <section id="ABOUT">
+            <div id="abtMe">
+                <h2><span>ABOUT ME</span></h2>
+                <p>Hello! I'm Dani, a 25-year-old, Mexican-American software engineer from San Diego, California. I am passionate about equal representation
+                    in the tech industry and making technology accessible to all.</p>
+            </div>
+            <div id="abtBody">
+                <picture id="selfie">
+                    <source media="(max-width: 639px)" srcset="images/selfie-320.jpg">
+                    <img src="images/selfie-640.jpg" alt="selfie" width="400" height="400">
+                </picture>
+                <div id="abtDiv">
+                    <ul class="wrap-elements">
+                        <li id="edu">
+                            <p class="about-heading">EDUCATION</p>
+                            <ul>
+                                <li>University of California, San Diego</li>
+                                <li>2017 - 2021</li>
+                                <li>B.S. Computer Science</li>
+                                <li>GPA 3.66</li>
+                            </ul>
+                        </li>
+                        <li id="interests">
+                            <p class="about-heading">SKILLS</p>
+                            <ul>
+                                <li>C</li>
+                                <li>Python</li>
+                                <li>Object-Oriented Programming</li>
+                                <li>HTML/CSS/JS</li>
+                            </ul>
+                        </li>
+                        <li id="experience">
+                            <p class="about-heading">EXPERIENCE</p>
+                            <table id="exp-table">
+                                <tbody>
+                                    <tr>
+                                        <th>Position</th>
+                                        <th>Year</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="pos">General Atomics Aeronautical Systems <br> <span class="role">Software Developer II</span></td>
+                                        <td class="year">2021 - Present</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pos">General Atomics Aeronautical Systems <br> <span class="role">Software Developer Intern</span></td>
+                                        <td class="year">2020 - 2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pos">NextUp Start-Up <br> <span class="role">Software Engineer</span></td>
+                                        <td class="year">2018 - 2019</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                        <li id="more">
+                            <p class="about-heading">MORE</p>
+                            <nav>
+                                <a href="https://www.linkedin.com/in/dfmolina/">
+                                    <picture id="linkedin">
+                                        <img src="images/linkedin.svg" alt="LinkedIn" width="50">
+                                    </picture>
+                                </a>
+                                <a href="https://github.com/dfmolina14">
+                                    <picture id="github">
+                                        <img src="images/github.svg" alt="GitHub" width="50">
+                                    </picture>
+                                </a>
+                            </nav>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+        </section>
+
+        <section id="PORTFOLIO">
+            <div id="port-header">
+                <h2><span>PORTFOLIO</span></h2>
+            </div>
+            <ul class="wrap-elements">
+                <li class="cards_item" id="growio">
+                    <div>
+                        <h3><span class="card_title">GROWIO</span></h3>
+                        <p class="card_desc">An Android application that helps the user take care of their plants. <br><br>
+                            Created using the Flutter SDK, Dart programming language, and Firebase hosting.
+                        </p>
+                        <p>Watch Demo Video <a href="https://www.youtube.com/embed/VfxWXQdKZ3A">Here</a>! </p>
+                        <!--<iframe title="GROWIO Demo" src="https://www.youtube.com/embed/VfxWXQdKZ3A" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>  -->
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div>
+                        <h3><span class="card_title">DoGS Processor</span></h3>
+                        <p class="card_desc">A computer micro-architecture similar to MIPS but with only 9 bits of instruction.<br><br>
+                            Constructed entirely in System Verilog hardware description language.
+                        </p>
+                        <img id="DoGS" src="images/DoGS.svg" alt="DoGS Processor">    
+                    </div>
+                </li>
+                <li class="cards_item">
+                    <div>
+                        <h3><span class="card_title">Bliss Fields</span></h3>
+                        <p class="card_desc">An interactive game where the user walks through a field to collect mushrooms while avoiding spiders. <br><br>
+                            Made with the OpenGL interface using C++.
+                        </p>
+                        <iframe title="Bliss Fields Demo" src="https://www.youtube.com/embed/zeNegj07kZc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>      
+                    </div> 
+                </li>
+                <li class="cards_item">
+                    <div>
+                        <h3><span class="card_title">2048</span></h3>
+                        <p class="card_desc">A replica of the interactive 2048 phone game.<br><br>
+                            Coded in Java using the Java FX platform for the GUI.
+                        </p>
+                        <video id="vid-2048" width="320" height="240" title="2048 Demo" controls="">
+                            <source src="2048.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>    
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="RESUME">
+            <h2 id="res"><span>RESUME</span></h2>
+            <div id="res-div">
+                <p id="res-pdf">
+                    Feel free to <a href="images/resume2024.pdf" download="">download</a> a PDF<br>version of my resume.
+                </p>
+                <picture id="res-img">
+                    <source media="(max-width: 360px)" srcset="images/resume2024.jpg">
+                    <img src="images/resume2024.jpg"" alt="resume" width="400" height="600"> 
+                </picture>
+            </div>
+        </section>
+
+        <section id="CONTACT">
+            <div id="cont">
+                <h2><span>GET IN TOUCH</span></h2>
+                <p>I am currently set to start a full-time position as a software developer in the fall. <br><br>
+                    Although I am not looking for any new opportunities right now, my inbox is always open.<br><br>
+                     Whether you have a question or just want to say hello, I'll try my best to get back to you!</p>
+            </div>
+            <form id="contact-form" action="contact.php" method="post">
+                <fieldset>
+                    <legend>Contact Me!</legend>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="email">Email address</label>
+                    <input type="text" id="email" name="email" required=""><br><br>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject"><br><br>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+                    <input type="submit" value="Send Message">
+                </fieldset>
+            </form>
+            <picture id="envelope" style="display: flex; flex-direction: column; align-items: center;">
+                <source media="(max-width:639px)" srcset="images/envelope-320.png">
+                <source media="(min-width:640px) and (max-width:799px)" srcset="images/envelope-640.png">
+                <source media="(min-width:800px)" srcset="images/envelope.webp">
+                <img src="images/envelope-640.png" alt="Envelope">
+            </picture>
+            <a href="#HOME">
+                <img id="arrow-up" src="images/arrow-up.svg" alt="Arrow Up">
+            </a>
+        </section>
+        
+    </main>
+
+    <footer class="foot" style="font-size: small;">
+        © Daniela Molina 2021 <br>
+        <span><cite><a href="https://www.behance.net/gallery/93781711/Side-Effects">Home</a></cite> 
+            and <cite><a href="https://www.behance.net/gallery/49226563/Generative-Posters">Portfolio</a></cite> Art by Rida Abbasi</span>
+    </footer>
+
+
+</body></html>
