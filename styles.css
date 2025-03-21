@@ -522,8 +522,8 @@ input[type=submit]:hover {
         margin: 2vmin;
         margin-top: 10px;
         width: 15vw;
-        max-width: 210px;
-        height: 500px;
+        max-width: 215px;
+        /*height: 500px;*/
         font-size: 1.25vw;
     }
     #DoGS:active {
