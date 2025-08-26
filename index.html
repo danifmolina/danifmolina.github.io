@@ -15,7 +15,6 @@
         <nav class="NavBar">
             <a href="#HOME">HOME</a>
             <a href="#ABOUT">ABOUT</a>
-            <a href="#PORTFOLIO">PORTFOLIO</a>
             <a href="#RESUME">RESUME</a>
             <a href="#CONTACT">CONTACT</a>
         </nav>
@@ -101,54 +100,6 @@
             </div>
         </section>
 
-        <section id="PORTFOLIO">
-            <div id="port-header">
-                <h2><span>PORTFOLIO</span></h2>
-            </div>
-            <ul class="wrap-elements">
-                <li class="cards_item" id="growio">
-                    <div>
-                        <h3><span class="card_title">GROWIO</span></h3>
-                        <p class="card_desc">An Android application that helps the user take care of their plants. <br><br>
-                            Created using the Flutter SDK, Dart programming language, and Firebase hosting.
-                        </p>
-                        <p>Watch Demo Video <a href="https://www.youtube.com/embed/VfxWXQdKZ3A">Here</a>! </p>
-                        <!--<iframe title="GROWIO Demo" src="https://www.youtube.com/embed/VfxWXQdKZ3A" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>  -->
-                    </div>
-                </li>
-                <li class="cards_item">
-                    <div>
-                        <h3><span class="card_title">DoGS Processor</span></h3>
-                        <p class="card_desc">A computer micro-architecture similar to MIPS but with only 9 bits of instruction.<br><br>
-                            Constructed entirely in System Verilog hardware description language.
-                        </p>
-                        <img id="DoGS" src="src/DoGS.svg" alt="DoGS Processor">    
-                    </div>
-                </li>
-                <li class="cards_item">
-                    <div>
-                        <h3><span class="card_title">Bliss Fields</span></h3>
-                        <p class="card_desc">An interactive game where the user walks through a field to collect mushrooms while avoiding spiders. <br><br>
-                            Made with the OpenGL interface using C++.
-                        </p>
-                        <iframe title="Bliss Fields Demo" src="https://www.youtube.com/embed/zeNegj07kZc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>      
-                    </div> 
-                </li>
-                <li class="cards_item">
-                    <div>
-                        <h3><span class="card_title">2048</span></h3>
-                        <p class="card_desc">A replica of the interactive 2048 phone game.<br><br>
-                            Coded in Java using the Java FX platform for the GUI.
-                        </p>
-                        <video id="vid-2048" width="320" height="240" title="2048 Demo" controls="">
-                            <source src="2048.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>    
-                    </div>
-                </li>
-            </ul>
-        </section>
-
         <section id="RESUME">
             <h2 id="res"><span>RESUME</span></h2>
             <div id="res-div">
@@ -170,17 +121,15 @@
                     Send me a message if you or anyone you know have any positions available.<br><br>
                     I look forward to hearing from you!</p>
             </div>
-            <form id="contact-form" action="contact.php" method="post">
+            <form id="contact-form" action="contact.php" method="POST">
                 <fieldset>
                     <legend>Contact Me!</legend>
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name"><br><br>
-                    <label for="email">Email address</label>
-                    <input type="text" id="email" name="email" required=""><br><br>
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject"><br><br>
+                    <input type="text" id="name" name="name" required="true"><br><br>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" required="true"><br><br>
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+                    <textarea id="message" name="message" rows="5" cols="30" required="true"></textarea><br><br>
                     <input type="submit" value="Send Message">
                 </fieldset>
             </form>
@@ -199,8 +148,7 @@
 
     <footer class="foot" style="font-size: small;">
         © Daniela Molina 2021 <br>
-        <span><cite><a href="https://www.behance.net/gallery/93781711/Side-Effects">Home</a></cite> 
-            and <cite><a href="https://www.behance.net/gallery/49226563/Generative-Posters">Portfolio</a></cite> Art by Rida Abbasi</span>
+        <span><cite><a href="https://www.behance.net/gallery/93781711/Side-Effects">Home</a></cite> Art by Rida Abbasi</span>
     </footer>
 
 

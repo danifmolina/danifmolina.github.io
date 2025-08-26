@@ -5,10 +5,9 @@
     font-display: swap;
 }
 :root {
-    --cont-green: #13654c;
+    --cont-blue: #04192c;
     --res-purple: #27102c;
     --abt-pink: #a8326965;
-    --port-violet: rgb(51, 6, 51);
   }
 
 /* HTML */
@@ -206,105 +205,9 @@ table {
     text-decoration: none;
 }
 
-/* Portfolio */
-#PORTFOLIO {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5vh 0 5vh 0;
-    background-color: rgb(245, 241, 225);
-}
-#port-header {
-    text-align: center;
-    margin-bottom: 5vh;
-    padding: 6%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: url(src/collageH.jpg) no-repeat center center;
-    background-size: cover;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
-    width: 70%;
-}
-#port-header span {
-    background-color: white;
-    color: var(--hr-color);
-    box-shadow:  8px 16px 0 var(--port-violet);
-    padding: 0;
-    writing-mode: horizontal-tb;
-}
-.wrap-elements {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-}
-#PORTFOLIO .wrap-elements {
-    width: 80%;
-    max-width: 80vw;
-    flex: 1 1 0px;
-    padding: 4px;
-}
-.cards_item {
-    padding: 1vw;
-    margin: 0.8vh;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: rgb(177, 158, 176);
-    border-radius: 1px;
-    transition: transform 0.5s;
-}
-.cards_item:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
-    transform: scale(1.1);
-}
-.cards_item h3 {
-    text-align: center;
-}
-.card_title {
-    background-color: white;
-    color: rgb(0, 27, 4);
-    box-shadow:  5px 10px 0 var(--port-violet);
-}
-.card_desc {
-    width: 95%;
-}
-iframe {
-    width: 95%;
-}
-#vid-2048, #DoGS {
-    width: 95%;
-    max-height: 200px;
-    margin: 0;
-    padding: 0;
-}
-#DoGS {
-    transition: transform 0.5s;
-}
-#DoGS:active {
-    transform: scale(1.5);
-}
-.cards_item div {
-    box-shadow: inset 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
-    padding: 15px;
-    height: 90%;
-    background-color: rgb(167, 149, 166);
-}
-
 /* Resume */
 #RESUME {
-    background: url(src/brown.jpg) no-repeat center center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: rgb(135,126,103);
+    background-color: rgb(82, 59, 87);
     display: flex;
     flex-direction: column;
     padding: 8vh 0 8vh 0;
@@ -364,7 +267,10 @@ iframe {
 
 /* Contact Me */
 #CONTACT {
-    background-color: rgba(60, 99, 71, 0.555);
+    background: url(src/sunprint.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgb(148, 185, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -383,15 +289,15 @@ iframe {
 }
 #cont span {
     background-color: white;
-    box-shadow:  8px 16px 0 var(--cont-green);
+    box-shadow:  8px 16px 0 rgb(4, 25, 44);;
     padding: 10px;
-    color: rgb(0, 22, 0);
+    color: rgb(0, 0, 22);
 }
 #cont p {
     margin: 5vh 15vw 0 15vw;
     background-color: white;
     text-align: center;
-    box-shadow:  8px 16px 0 var(--cont-green);
+    box-shadow:  8px 16px 0 var(--cont-blue);
     padding: 10px;
 }
 #contact-form {
@@ -417,7 +323,7 @@ input[type=text], select, textarea {
 }
 input[type=submit] {
     font-family: "Tauri", Helvetica, Arial, sans-serif;
-    background-color: var(--cont-green);
+    background-color: var(--cont-blue);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -425,7 +331,7 @@ input[type=submit] {
     cursor: pointer;
 }
 input[type=submit]:hover {
-    background-color: rgba(28, 85, 68, 0.6);
+    background-color: rgb(52, 64, 117);
 }  
 #envelope {
     text-align: center;
@@ -440,16 +346,14 @@ input[type=submit]:hover {
 
 /* Footer */
 .foot {
-    background: url(src/green.jpg) no-repeat fixed;
-    background-size: cover;
-    background-color: #6d3d54a4;
+    background-color: var(--cont-blue);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px 0 20px 0;
     color: white;
-    height: 5vh;
+    height: 2vh;
     text-shadow: 2px 2px black;
 }
 #arrow-up {
@@ -473,7 +377,7 @@ input[type=submit]:hover {
 }
 
 /* Media queries - Responsive Layouts */
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 900px) {
     .cards_item {
         width: 38%;
         max-height: 30%;
@@ -497,7 +401,9 @@ input[type=submit]:hover {
         height: 100%;
         width: 60%;
         max-width: 80vw;
-        flex-wrap: nowrap;
+        display: flex;
+        gap: 15px;
+        /* flex-wrap: nowrap; */
     }
     #port-header {
         width: 10%;
@@ -522,7 +428,7 @@ input[type=submit]:hover {
         margin: 2vmin;
         margin-top: 10px;
         width: 15vw;
-        max-width: 215px;
+        max-width: 20%;
         /*height: 500px;*/
         font-size: 1.25vw;
     }
@@ -567,7 +473,7 @@ input[type=submit]:hover {
         margin-top: -45vh;
     }
     #res-img:hover {
-        width: 50%;
+        width: 45%;
     }
 
     /* CONTACT Layout */
