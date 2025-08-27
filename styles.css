@@ -166,8 +166,21 @@ nav.NavBar {}
     margin-left: -4vw;
     box-shadow: 0 8px 16px 0 rgba(92, 68, 68, 0.7);
     transform: translateY(-1vh);
-    display: flex;
+}
+#abtContent {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 55% 40%;
+    margin: 20;
+    padding: 0;
+    column-gap: 5%;
     justify-content: center;
+}
+#edu, #skills {
+    grid-row: 1;
+}
+#experience, #more {
+    grid-column: 1 / span 2;
 }
 .about-heading {
     font-weight: bold;
@@ -181,10 +194,10 @@ nav.NavBar {}
 .year {
     text-align: center;
 }
-#edu, #interests, #experience, #more {
+/* #edu, #skills, #experience, #more {
     width: 90%;
     margin: 0px;
-}
+} */
 #more {
     margin-bottom: 10px;
 }
@@ -381,59 +394,6 @@ input[type=submit]:hover {
     .cards_item {
         width: 38%;
         max-height: 30%;
-    }
-    #edu, #interests {
-        width: 41.5%;
-    }
-    #interests {
-        margin-left: 7%;
-    }
-    /* PORTFOLIO Layout */
-    #PORTFOLIO {
-        width: 100vw;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        padding: 15vh 0 15vh 0;
-    }
-    #PORTFOLIO .wrap-elements {
-        height: 100%;
-        width: 60%;
-        max-width: 80vw;
-        display: flex;
-        gap: 15px;
-        /* flex-wrap: nowrap; */
-    }
-    #port-header {
-        width: 10%;
-        height: 100%;
-        text-align: center;
-        padding: 3vh 2% 3vh 2%;
-        margin-left: 10px;
-        margin-bottom: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: url(src/collageV.jpg) no-repeat center center;
-    }
-    #port-header span {
-        padding: 0;
-        margin: 0;
-        writing-mode: vertical-rl;
-        text-orientation: upright;
-    }
-    .cards_item {
-        margin: 2vmin;
-        margin-top: 10px;
-        width: 15vw;
-        max-width: 20%;
-        /*height: 500px;*/
-        font-size: 1.25vw;
-    }
-    #DoGS:active {
-        transform: scale(4) translateY(-30px);
     }
 
     /* RESUME Layout */
