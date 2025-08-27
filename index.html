@@ -124,12 +124,16 @@
             <form id="contact-form" action="https://formsubmit.io/send/danimolina1424@gmail.com" method="POST">
                 <fieldset>
                     <legend>Contact Me!</legend>
+                    <!-- Following hidden input used to redirect back to contact page -->
+                    <input name="_redirect" type="hidden" id="site-url" value="https://danifmolina.github.io/#CONTACT">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required="true"><br><br>
                     <label for="email">Email</label>
                     <input type="text" id="email" name="email" required="true"><br><br>
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="5" cols="30" required="true"></textarea><br><br>
+                    <!-- Following hidden input used to fool spambots. If any value provided, formsubmit will reject submission -->
+                    <input name="_formsubmit_id" type="text" style="display:none">
                     <input type="submit" value="Send Message">
                 </fieldset>
             </form>
