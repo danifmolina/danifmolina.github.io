@@ -32,7 +32,7 @@ h1 {
     padding: 0;
     width: auto;
     text-align: center;
-    text-shadow: 5px 5px #3b1125;
+    text-shadow: 8px 8px #3b1125;
     animation-name: change-shadow;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -83,7 +83,7 @@ nav.NavBar {}
     height: 100vh;
     width: 100vw;
     color: white;
-    text-shadow: 1px 1px #3b1125;
+    text-shadow: 2px 2px #3b1125;
     background: url(src/circles.jpeg) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
@@ -97,11 +97,11 @@ nav.NavBar {}
     display: flex;
 }
 @keyframes change-shadow {
-    0%   {text-shadow: 5px 5px #6d1a41;}
-    25%  {text-shadow: 5px 5px #6932a8;}
-    50%  {text-shadow: 5px 5px #323ea8;}
-    75%  {text-shadow: 5px 5px #0c1352;}
-    100% {text-shadow: 5px 5px #6d1a41;}
+    0%   {text-shadow: 8px 8px #6d1a41;}
+    25%  {text-shadow: 8px 8px #6932a8;}
+    50%  {text-shadow: 8px 8px #323ea8;}
+    75%  {text-shadow: 8px 8px #0c1352;}
+    100% {text-shadow: 8px 8px #6d1a41;}
 }
 #home-info {
     font-size: 3.5vmin;
@@ -194,10 +194,6 @@ nav.NavBar {}
 .year {
     text-align: center;
 }
-/* #edu, #skills, #experience, #more {
-    width: 90%;
-    margin: 0px;
-} */
 #more {
     margin-bottom: 10px;
 }
@@ -266,16 +262,12 @@ table {
 #res-img {
     text-align: center;
     width: 70%;
-    transition: width 0.5s;
 }
 #res-img img {
     box-shadow:  8px 16px 0  var(--res-purple);
     width: 100%;
     height: auto;
     margin-top: 2vh;
-}
-#res-img:hover {
-    width: 95%;
 }
 
 /* Contact Me */
@@ -324,6 +316,12 @@ table {
 }
 #contact-form:hover {
     transform: translateY(-30px);
+}
+#contact-form fieldset {
+    height: fit-content;
+}
+#message {
+    height: 13vh;
 }
 input[type=text], select, textarea {
     width: 100%;
@@ -391,11 +389,6 @@ input[type=submit]:hover {
 
 /* Media queries - Responsive Layouts */
 @media screen and (min-width: 900px) {
-    .cards_item {
-        width: 38%;
-        max-height: 30%;
-    }
-
     /* RESUME Layout */
     #RESUME {
         display: flex;
@@ -432,9 +425,6 @@ input[type=submit]:hover {
     #res-img img {
         margin-top: -45vh;
     }
-    #res-img:hover {
-        width: 45%;
-    }
 
     /* CONTACT Layout */
     #CONTACT {
@@ -464,9 +454,6 @@ input[type=submit]:hover {
     }
     input[type=text], select, textarea {
         border-radius: 4px;
-    }
-    #envelope {
-        width: 100%;
     }
     #envelope img {
         width: 100%;
@@ -518,6 +505,12 @@ input[type=submit]:hover {
         margin-top: 19vh;
         width: 60vw;
     }
+    #res-img {
+        width: 80%;
+    }
+    #contact-form:hover {
+        transform: translateY(0);
+    }
 }
 
 /* Phone screen */
@@ -528,19 +521,10 @@ input[type=submit]:hover {
     #ABOUT {
         background-attachment: scroll;
     }
-    #RESUME {
+    #CONTACT {
         background-attachment: scroll;
     }
     #envelope img {
         margin-top: -20vh;
-    }
-    .cards_item:hover {
-        transform: scale(1);
-    }
-    #contact-form:hover {
-        transform: translateY(0);
-    }
-    #DoGS:active {
-        transform: scale(1) translateY(0px);
     }
 }

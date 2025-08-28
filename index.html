@@ -1,7 +1,7 @@
 <html lang="en-US"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-    <meta name="Description" content="Daniela Molina's computer science portfolio website.">
+    <meta name="Description" content="Daniela Molina's portfolio website.">
     <title> Dani Dot Com </title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="src/favicon.png">
@@ -30,8 +30,7 @@
         <section id="ABOUT">
             <div id="abtMe">
                 <h2><span>ABOUT ME</span></h2>
-                <p>Hello! I'm Dani, a 25-year-old, Mexican-American software engineer from San Diego, California. I am passionate about equal representation
-                    in the tech industry and making technology accessible to all.</p>
+                <!-- <p>Hello! I'm Dani, a skilled software engineer from San Diego, California. I have experience in embedded development and automated testing. Recently, I have transitioned my focus to web development, and am actively expanding my expertise in modern web technologies.</p> -->
             </div>
             <div id="abtBody">
                 <picture id="selfie">
@@ -74,8 +73,8 @@
                                         <td class="year">2020 - 2020</td>
                                     </tr>
                                     <tr>
-                                        <td class="pos">NextUp Start-Up <br> <span class="role">Software Engineer</span></td>
-                                        <td class="year">2018 - 2019</td>
+                                        <td class="pos">RecRoom Website Development<br> <span class="role">Full Stack Software Engineer</span></td>
+                                        <td class="year">2025 - Present</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -104,11 +103,11 @@
             <h2 id="res"><span>RESUME</span></h2>
             <div id="res-div">
                 <p id="res-pdf">
-                    Feel free to <a href="src/resume2025_web.pdf" download="">download</a> a PDF<br>version of my resume.
+                    Feel free to <a href="src/RESUME_2025.pdf" download="">download</a> a PDF<br>version of my resume.
                 </p>
                 <picture id="res-img">
-                    <source media="(max-width: 360px)" srcset="src/resume2025_web.jpg">
-                    <img src="src/resume2025_web.jpg"" alt="resume" width="400" height="600"> 
+                    <source media="(max-width: 360px)" srcset="src/RESUME_2025.jpg">
+                    <img src="src/RESUME_2025.jpg"" alt="resume" width="400" height="600"> 
                 </picture>
             </div>
         </section>
@@ -127,7 +126,7 @@
                     <!-- Following hidden input used to redirect back to contact page -->
                     <input name="_next" type="hidden" id="site-url" value="https://danifmolina.github.io/#CONTACT">
                     <label for="name">Full Name</label>
-                    <input type="text" id="name" name="_replyto" required="true"><br><br>
+                    <input type="text" id="name" name="name" required="true"><br><br>
                     <label for="email">Email Address</label>
                     <input type="text" id="email" name="email" required="true"><br><br>
                     <label for="message">Message</label>
@@ -137,10 +136,9 @@
                     <input type="submit" value="Send Message">
                 </fieldset>
             </form>
-            <picture id="envelope" style="display: flex; flex-direction: column; align-items: center;">
+            <picture id="envelope">
                 <source media="(max-width:639px)" srcset="src/envelope-320.png">
-                <source media="(min-width:640px) and (max-width:799px)" srcset="src/envelope-640.png">
-                <source media="(min-width:800px)" srcset="src/envelope.webp">
+                <source srcset="src/envelope-640.png">
                 <img src="src/envelope-640.png" alt="Envelope">
             </picture>
             <a href="#HOME">
